@@ -1,6 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Troca nomes'
   ClientHeight = 607
@@ -42,7 +43,6 @@ object Form1: TForm1
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 2
-    ExplicitTop = -6
     object Label1: TLabel
       Left = 280
       Top = 16
