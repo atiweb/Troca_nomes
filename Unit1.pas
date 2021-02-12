@@ -44,7 +44,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-case MessageDlg('Você tem certeza absoluta de executar a troca de nomes? Esta ação não e reversível, tenha precaução', mtConfirmation, [mbOK, mbCancel], 0) of
+case MessageDlg('VocÃª tem certeza absoluta de executar a troca de nomes? Esta aÃ§Ã£o nÃ£o e reversÃ­vel, tenha precauÃ§Ã£o', mtConfirmation, [mbOK, mbCancel], 0) of
   mrOk:
     begin
 troca_nomes(LabeledEdit1.Text,strtoint(LabeledEdit2.text),FileListBox1.Count-1);
@@ -111,7 +111,7 @@ if form1.CheckBox1.Checked then
 begin
  I := 0;
 end;
-   // aqui vc inicializa de quanto será o passo
+   // aqui vc inicializa de quanto serÃ¡ o passo
 
   N := 10;
   while I <= N do
@@ -138,7 +138,7 @@ if form1.CheckBox1.Checked then
 begin
  I := 0;
 end;
-   // aqui vc inicializa de quanto será o passo
+   // aqui vc inicializa de quanto serÃ¡ o passo
   movec:=0;
   N := (num*totalfiles)+I;
 
@@ -150,7 +150,7 @@ end;
   cant00:=cant0(lengtstring);
   ext:= ExtractFileExt(FileListBox1.Items.Strings[movec]);
  form1.Memo1.Lines.Add(nome + cant00 + inttostr(I) + '.' + ext)  ;
-  if not RenameFile(FileListBox1.Items.Strings[movec],nome + cant00 + inttostr(I) + '.' + ext) then
+  if not RenameFile(FileListBox1.Items.Strings[movec],nome + cant00 + inttostr(I) + ext) then
    showmessage('Error renaming file!');
      movec:=movec+1;
     Inc(I, num);
