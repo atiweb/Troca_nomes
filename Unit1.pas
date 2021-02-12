@@ -149,7 +149,7 @@ end;
   lengtstring := Length(inttostr(N))- Length(inttostr(I));
   cant00:=cant0(lengtstring);
   ext:= ExtractFileExt(FileListBox1.Items.Strings[movec]);
- form1.Memo1.Lines.Add(nome + cant00 + inttostr(I) + '.' + ext)  ;
+ form1.Memo1.Lines.Add(nome + cant00 + inttostr(I) + ext)  ;
   if not RenameFile(FileListBox1.Items.Strings[movec],nome + cant00 + inttostr(I) + ext) then
    showmessage('Error renaming file!');
      movec:=movec+1;
